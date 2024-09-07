@@ -28,8 +28,8 @@ double calculateDistance() {
     printf("Enter a value: ");
     scanf("%lf", &y2);
     // summary of points
-    printf("Point #1 entered: x1 = %lf, y1 = %lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %lf, y1 = %lf\n", x2, y2);
+    printf("Point #1 entered: x1 = %.2f, y1 = %.2f\n", x1, y1);
+    printf("Point #2 entered: x2 = %.2f, y1 = %.2f\n", x2, y2);
 
     //math
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
