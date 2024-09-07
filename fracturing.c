@@ -29,7 +29,7 @@ double calculateDistance() {
     scanf("%lf", &y2);
     // summary of points
     printf("Point #1 entered: x1 = %.2f, y1 = %.2f\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2f, y1 = %.2f\n", x2, y2);
+    printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
 
     //math
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
@@ -55,7 +55,7 @@ double calculatePerimeter() {
     scanf("%lf", &y2);
     // summary of points
     printf("Point #1 entered: x1 = %.2f, y1 = %.2f\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2f, y1 = %.2f\n", x2, y2);
+    printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
 
     //math
     double perimeter = (2*(y2-y1)+2*(x2-x1));
@@ -81,7 +81,7 @@ double calculateArea() {
     scanf("%lf", &y2);
     // summary of points
     printf("Point #1 entered: x1 = %.2f, y1 = %.2f\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2f, y1 = %.2f\n", x2, y2);
+    printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
 
     //math
     double area = ((y2-y1)*(x2-x1));
@@ -94,5 +94,6 @@ double calculateArea() {
 int main(int argc, char **argv) {
     double distance = calculateDistance();
     double perimeter = calculatePerimeter();
+    double area = calculateArea();
     return 0;
 }
