@@ -12,12 +12,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// main function used to call other functions
-int main(int argc, char **argv) {
-    double distance = calculateDistance();
-    return 0;
-}
-
 // OBJECTIVE: calculate the distance between two points given by the user
 double calculateDistance() {
     double x1, y1, x2, y2;
@@ -42,4 +36,10 @@ double calculateDistance() {
     printf("The distance between the two points is %.2f\n", distance);
 
     return distance;
+}
+
+// main function used to call other functions
+int main(int argc, char **argv) {
+    double distance = calculateDistance();
+    return 0;
 }
