@@ -14,6 +14,7 @@
 
 // main function used to call other functions
 int main(int argc, char **argv) {
+    double distance = calculateDistance();
     return 0;
 }
 
@@ -40,4 +41,5 @@ double calculateDistance() {
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
     printf("The distance between the two points is %.2f\n", distance);
 
+    return distance;
 }
