@@ -23,18 +23,18 @@ double calculateDistance() {
     // ask user for point 1
     printf("Enter the coordinates for Point #1 (x1,y1): \n");
     printf("Enter a value: ");
-    scanf("%ln", &x1);
+    scanf("%lf", &x1);
     printf("Enter a value: ");
-    scanf("%ln", &y1);
+    scanf("%lf", &y1);
     // ask user for point 2
     printf("Enter the coordinates for Point #2 (x2,y2): \n");
     printf("Enter a value: ");
-    scanf("%ln", &x2);
+    scanf("%lf", &x2);
     printf("Enter a value: ");
-    scanf("%ln", &y2);
+    scanf("%lf", &y2);
     // summary of points
-    printf("Point #1 entered: x1 = %ln, y1 = %ln\n", x1, y1);
-    printf("Point #2 entered: x2 = %ln, y1 = %ln\n", x2, y2);
+    printf("Point #1 entered: x1 = %lf, y1 = %lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %lf, y1 = %lf\n", x2, y2);
 
     //math
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
