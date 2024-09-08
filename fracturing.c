@@ -41,25 +41,11 @@ double calculateDistance() {
 
 // OBJECTIVE: use points to calculate perimeter around city
 double calculatePerimeter() {
-    double x1, x2, y1, y2;
-    // ask user for point 1
-    printf("Enter the coordinates for Point #1 (x1,x2): \n");
-    printf("Enter a value: ");
-    scanf("%lf", &x1);
-    printf("Enter a value: ");
-    scanf("%lf", &x2);
-    // ask user for point 2
-    printf("Enter the coordinates for Point #2 (y1,y2): \n");
-    printf("Enter a value: ");
-    scanf("%lf", &y1);
-    printf("Enter a value: ");
-    scanf("%lf", &y2);
+    //math
+    double distance = calculateDistance(x1,x2,y1,y2);
     // summary of points
     printf("Point #1 entered: x1 = %.2f, y1 = %.2f\n", x1, y1);
     printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
-
-    //math
-    double distance = calculateDistance(x1,x2,y1,y2);
     double perimeter = PI*distance;
     printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
 
