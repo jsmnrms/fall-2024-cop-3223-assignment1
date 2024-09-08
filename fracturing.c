@@ -59,7 +59,7 @@ double calculatePerimeter() {
     printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
 
     //math
-    double distance = calculateDistance(x1,x2,y1,y2);
+    double distance = calculateDistance();
     double perimeter = PI*distance;
     printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
 
