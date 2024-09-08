@@ -41,8 +41,8 @@ double calculateDistance() {
 
 // OBJECTIVE: use points to calculate perimeter around city
 double calculatePerimeter() {
-    //math
-    double distance = calculateDistance(x1,x2,y1,y2);
+    //declare distance
+    double distance = calculateDistance();
     // summary of points
     printf("Point #1 entered: x1 = %.2f, y1 = %.2f\n", x1, y1);
     printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
