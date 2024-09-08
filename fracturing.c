@@ -85,7 +85,7 @@ double calculateArea() {
 
     //math
     double area = ((y2-y1)*(x2-x1));
-    printf("The area of the city encompassed by your request is %2f\n", area);
+    printf("The area of the city encompassed by your request is %.2f\n", area);
 
     return area;
 }
@@ -111,7 +111,7 @@ double calculateWidth() {
 
     //math
     double width = (x2-x1);
-    printf("The width of the city encompassed by your request is %2f\n", width);
+    printf("The width of the city encompassed by your request is %.2f\n", width);
 
     return width;
 }
@@ -137,7 +137,7 @@ double calculateHeight() {
 
     //math
     double height = (y2-y1);
-    printf("The height of the city encompassed by your request is %2f\n", height);
+    printf("The height of the city encompassed by your request is %.2f\n", height);
 
     return height;
 }
