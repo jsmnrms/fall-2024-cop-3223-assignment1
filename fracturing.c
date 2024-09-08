@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#define PI = 3.14159
 
 // OBJECTIVE: calculate the distance between two points given by the user
 double calculateDistance() {
@@ -33,7 +34,7 @@ double calculateDistance() {
 
     //math
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
-    printf("The distance between the two points is %.2f\n", distance);
+    printf("The distance between the two points is %.3f\n", distance);
 
     return distance;
 }
@@ -59,7 +60,7 @@ double calculatePerimeter() {
 
     //math
     double perimeter = (2*(y2-y1)+2*(x2-x1));
-    printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+    printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
 
     return perimeter;
 }
@@ -85,7 +86,7 @@ double calculateArea() {
 
     //math
     double area = ((y2-y1)*(x2-x1));
-    printf("The area of the city encompassed by your request is %.2f\n", area);
+    printf("The area of the city encompassed by your request is %.3f\n", area);
 
     return area;
 }
@@ -111,7 +112,7 @@ double calculateWidth() {
 
     //math
     double width = (x2-x1);
-    printf("The width of the city encompassed by your request is %.2f\n", width);
+    printf("The width of the city encompassed by your request is %.3f\n", width);
 
     return width;
 }
@@ -137,7 +138,7 @@ double calculateHeight() {
 
     //math
     double height = (y2-y1);
-    printf("The height of the city encompassed by your request is %.2f\n", height);
+    printf("The height of the city encompassed by your request is %.3f\n", height);
 
     return height;
 }
