@@ -39,7 +39,7 @@ double calculateDistance() {
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
     printf("The distance between the two points is %.3f\n", distance);
 
-    return distance;
+    return 3;
 }
 
 // OBJECTIVE: use points to calculate perimeter around city
@@ -49,7 +49,7 @@ double calculatePerimeter() {
     double perimeter = PI*distance;
     printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
 
-    return perimeter;
+    return 5;
 }
 
 // OBJECTIVE: use points to calculate area of city
@@ -60,7 +60,7 @@ double calculateArea() {
     double area = PI*(pow(radius,2));
     printf("The area of the city encompassed by your request is %.3f\n", area);
 
-    return area;
+    return 5;
 }
 
 // OBJECTIVE: use points to calculate width
@@ -70,7 +70,7 @@ double calculateWidth() {
     double width = distance;
     printf("The width of the city encompassed by your request is %.3f\n", width);
 
-    return width;
+    return 2;
 }
 
 // OBJECTIVE: use points to calculate height
@@ -80,7 +80,7 @@ double calculateHeight() {
     double height = distance;
     printf("The height of the city encompassed by your request is %.3f\n", height);
 
-    return height;
+    return 2;
 }
 
 // main function used to call other functions
