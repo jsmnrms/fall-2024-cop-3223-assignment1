@@ -17,13 +17,13 @@
 double calculateDistance() {
     double x1, x2, y1, y2;
     // ask user for point 1
-    printf("Enter the coordinates for Point #1 (x1,y1): \n");
+    printf("Enter the coordinates for Point #1 (x1,x2): \n");
     printf("Enter a value: ");
     scanf("%lf", &x1);
     printf("Enter a value: ");
     scanf("%lf", &x2);
     // ask user for point 2
-    printf("Enter the coordinates for Point #2 (x2,y2): \n");
+    printf("Enter the coordinates for Point #2 (y1,y2): \n");
     printf("Enter a value: ");
     scanf("%lf", &y1);
     printf("Enter a value: ");
@@ -43,13 +43,13 @@ double calculateDistance() {
 double calculatePerimeter() {
     double x1, x2, y1, y2;
     // ask user for point 1
-    printf("Enter the coordinates for Point #1 (x1,y1): \n");
+    printf("Enter the coordinates for Point #1 (x1,x2): \n");
     printf("Enter a value: ");
     scanf("%lf", &x1);
     printf("Enter a value: ");
     scanf("%lf", &x2);
     // ask user for point 2
-    printf("Enter the coordinates for Point #2 (x2,y2): \n");
+    printf("Enter the coordinates for Point #2 (y1,y2): \n");
     printf("Enter a value: ");
     scanf("%lf", &y1);
     printf("Enter a value: ");
@@ -59,7 +59,8 @@ double calculatePerimeter() {
     printf("Point #2 entered: x2 = %.2f, y2 = %.2f\n", x2, y2);
 
     //math
-    double perimeter = (2*(y2-y1)+2*(x2-x1));
+    double distance = calculateDistance(x1,x2,y1,y2);
+    double perimeter = PI*distance;
     printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
 
     return perimeter;
@@ -69,13 +70,13 @@ double calculatePerimeter() {
 double calculateArea() {
     double x1, x2, y1, y2;
     // ask user for point 1
-    printf("Enter the coordinates for Point #1 (x1,y1): \n");
+    printf("Enter the coordinates for Point #1 (x1,x2): \n");
     printf("Enter a value: ");
     scanf("%lf", &x1);
     printf("Enter a value: ");
     scanf("%lf", &x2);
     // ask user for point 2
-    printf("Enter the coordinates for Point #2 (x2,y2): \n");
+    printf("Enter the coordinates for Point #2 (y1,y2): \n");
     printf("Enter a value: ");
     scanf("%lf", &y1);
     printf("Enter a value: ");
@@ -95,13 +96,13 @@ double calculateArea() {
 double calculateWidth() {
     double x1, x2, y1, y2;
     // ask user for point 1
-    printf("Enter the coordinates for Point #1 (x1,y1): \n");
+    printf("Enter the coordinates for Point #1 (x1,x2): \n");
     printf("Enter a value: ");
     scanf("%lf", &x1);
     printf("Enter a value: ");
     scanf("%lf", &x2);
     // ask user for point 2
-    printf("Enter the coordinates for Point #2 (x2,y2): \n");
+    printf("Enter the coordinates for Point #2 (y1,y2): \n");
     printf("Enter a value: ");
     scanf("%lf", &y1);
     printf("Enter a value: ");
@@ -121,13 +122,13 @@ double calculateWidth() {
 double calculateHeight() {
     double x1, y1, x2, y2;
     // ask user for point 1
-    printf("Enter the coordinates for Point #1 (x1,y1): \n");
+    printf("Enter the coordinates for Point #1 (x1,x2): \n");
     printf("Enter a value: ");
     scanf("%lf", &x1);
     printf("Enter a value: ");
     scanf("%lf", &x2);
     // ask user for point 2
-    printf("Enter the coordinates for Point #2 (x2,y2): \n");
+    printf("Enter the coordinates for Point #2 (y1,y2): \n");
     printf("Enter a value: ");
     scanf("%lf", &y1);
     printf("Enter a value: ");
