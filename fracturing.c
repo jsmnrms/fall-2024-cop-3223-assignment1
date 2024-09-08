@@ -9,7 +9,7 @@
 // Input: numerical values associated with corrdinates
 //
 // Output: summary of points and using those points to calculate
-// distance, perimeter, area, width, and height of a city. yup
+// distance, perimeter, area, width, and height of a city.
 // //********************************************************
 
 #include <stdio.h>
@@ -39,7 +39,7 @@ double calculateDistance() {
     double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
     printf("The distance between the two points is %.3f\n", distance);
 
-    return 3;
+    return distance;
 }
 
 // OBJECTIVE: use points to calculate perimeter around city
@@ -48,8 +48,8 @@ double calculatePerimeter() {
     double distance = calculateDistance();
     double perimeter = PI*distance;
     printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
-
-    return 5;
+    
+    return perimeter;
 }
 
 // OBJECTIVE: use points to calculate area of city
@@ -60,7 +60,7 @@ double calculateArea() {
     double area = PI*(pow(radius,2));
     printf("The area of the city encompassed by your request is %.3f\n", area);
 
-    return 5;
+    return area;
 }
 
 // OBJECTIVE: use points to calculate width
@@ -70,7 +70,7 @@ double calculateWidth() {
     double width = distance;
     printf("The width of the city encompassed by your request is %.3f\n", width);
 
-    return 2;
+    return width;
 }
 
 // OBJECTIVE: use points to calculate height
@@ -80,7 +80,7 @@ double calculateHeight() {
     double height = distance;
     printf("The height of the city encompassed by your request is %.3f\n", height);
 
-    return 2;
+    return height;
 }
 
 // main function used to call other functions
