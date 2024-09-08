@@ -1,7 +1,7 @@
 //********************************************************
 // fracturing.c
 // Author: Jasmin Ramos
-// Date: 9/7/24
+// Date: 9/8/24
 // UCF ID: 5235505
 // Class: COP 3223, Professor Parra
 // Purpose: This program asks users to input values which
